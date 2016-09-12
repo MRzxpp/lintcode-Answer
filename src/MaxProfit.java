@@ -5,6 +5,7 @@ public class MaxProfit {
 
     /**
      * 时间复杂度为O(n2)，过高
+     *
      * @param prices
      * @return
      */
@@ -20,9 +21,28 @@ public class MaxProfit {
         return profit;
     }
 
+    /**
+     * 遍历数组 时间复杂度为O(n)
+     * @param prices
+     * @return
+     */
+    public int maxprofit2(int[] prices) {
+        if (prices.length < 2) {
+            return 0;
+        }
+
+        int profit = 0;
+        int curMin = prices[0];
+        for (int i = 1; i < prices.length; i++) {
+            curMin = Math.min(curMin, prices[i]);
+            profit = Math.max(profit, prices[i] - curMin);
+        }
+        return profit;
+    }
+
     public static void main(String args[]) {
-        int[] nums = new int[]{7,6,4,3,1};
+        int[] nums = new int[]{7, 6, 4, 3, 12};
         MaxProfit maxProfit = new MaxProfit();
-        System.out.println(maxProfit.maxprofit(nums));
+        System.out.println(maxProfit.maxprofit2(nums));
     }
 }
