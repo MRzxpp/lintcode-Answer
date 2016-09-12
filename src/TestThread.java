@@ -28,9 +28,10 @@ class NewThread implements Runnable {
 
 class NewThread2 implements Runnable {
     Thread t;
-    NewThread2(){
-        t=new Thread(this,"ChildChild");
-        System.out.println("ChildChild: "+t);
+
+    NewThread2() {
+        t = new Thread(this, "ChildChild");
+        System.out.println("ChildChild: " + t);
         t.start();
     }
 
