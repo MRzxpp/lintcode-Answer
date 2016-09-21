@@ -17,9 +17,6 @@ public class BinaryTreePaths {
         }
     }
 
-    private int i = 0;
-    private List<String> paths = new ArrayList<>();
-
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> result = new ArrayList<String>();
         if (root == null) {
@@ -36,7 +33,7 @@ public class BinaryTreePaths {
 
         if (root.left == null && root.right == null) {
             result.add(path);
-            return;
+//            return;
         }
 
         if (root.left != null) {
