@@ -1,7 +1,9 @@
+package LintCode;
+
 /**
  * Your object will be instantiated and called as such:
- * ToyFactory tf = new ToyFactory();
- * Toy toy = tf.getToy(type);
+ * LintCode.ToyFactory tf = new LintCode.ToyFactory();
+ * LintCode.Toy toy = tf.getToy(type);
  * toy.talk();
  */
 interface Toy {
@@ -35,10 +37,10 @@ public class ToyFactory {
                 System.out.println("Wrong Input");
             }
         };
-        if (type == "Dog") {
+        if (type == "LintCode.Dog") {
             toy = new Dog();
             return toy;
-        } else if (type == "Cat") {
+        } else if (type == "LintCode.Cat") {
             toy = new Cat();
             return toy;
         } else {
@@ -47,7 +49,7 @@ public class ToyFactory {
     }
 
     public static void main(String[] args) {
-        String type="Dog";
+        String type="LintCode.Dog";
         ToyFactory tf = new ToyFactory();
         Toy toy = tf.getToy(type);
         toy.talk();

@@ -1,10 +1,12 @@
+package LintCode;
+
 /**
  * Created by Zhongsz on 2016/9/22.
  * 两二叉树是否等价
  */
 
 
-// * Definition of TreeNode:
+// * Definition of LintCode.TreeNode:
 class TreeNode {
     int val;
     TreeNode left, right;

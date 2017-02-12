@@ -1,3 +1,5 @@
+package LintCode;
+
 import java.util.Arrays;
 
 /**

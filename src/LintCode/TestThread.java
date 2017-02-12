@@ -1,3 +1,5 @@
+package LintCode;
+
 /**
  * Created by Zhongsz on 2016/9/12.
  */
