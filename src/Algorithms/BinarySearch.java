@@ -23,23 +23,12 @@ public class BinarySearch {
         return -1;
     }
 
-    public static void main(String[] args){
-        int[] whitelist={3,5,1,2,22,11,55,33,67,3,1,22};
+    public static void main(String[] args) {
+        int[] whitelist = {3, 5, 1, 2, 22, 11, 55, 33, 67, 3, 1, 22};
         Arrays.sort(whitelist);
-        int key=5;
-        if (rank(key,whitelist)<0){
+        int key = 5;
+        if (rank(key, whitelist) < 0) {
             System.out.print(key);
         }
-
-        int[] c1=new int[2];
-        c1[1]=123;
-        int[] c2=c1;
-        System.out.println(c1[1]);
-        System.out.println(c2[1]);
-        c2[1]=456;
-        System.out.println(c1[1]);
-        System.out.println(c2[1]);
-        System.out.println(c1);
-        System.out.println(c2);
     }
 }
